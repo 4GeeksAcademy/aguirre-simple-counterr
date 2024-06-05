@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClock } from '@fortawesome/free-solid-svg-icons';
 import React from "react";
 
 //include images into your bundle
@@ -14,7 +16,10 @@ let sixth = Math.floor(props.counter / 100000) % 10;
 
 
 	return (
-		<div className="text-center d-flex justify-content-center" >
+		<div  className="text-center d-flex justify-content-center" >
+			<div className="rounded bg-black text-white me-2 d-flex justify-content-center align-items-center" style={{width:"7rem", height:"9rem", fontSize:"5rem"}}>
+                <FontAwesomeIcon icon={faClock} />
+            </div>
 			<div className="rounded bg-black text-white me-2" style={{width:"7rem", height:"9rem", fontSize:"5rem"}}>
 				{sixth}
 			</div>
